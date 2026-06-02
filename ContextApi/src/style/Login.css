@@ -1,0 +1,136 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at top left, #103f5f, #061936 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-page::before,
+.login-page::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #34e0c2, transparent);
+  opacity: 0.25;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.login-page::before {
+  top: -120px;
+  left: -120px;
+}
+
+.login-page::after {
+  bottom: -120px;
+  right: -120px;
+}
+
+.login-card {
+  width: 330px;
+  min-height: 430px;
+  background: rgba(3, 18, 45, 0.86);
+  border-radius: 35px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.login-header {
+  height: 70px;
+  background: linear-gradient(135deg, #34e0c2, #26c4b3);
+  color: #071b2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 13px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 35px 35px 0 0;
+}
+
+.login-form {
+  padding: 35px 35px 30px;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(190, 210, 230, 0.55);
+  margin-bottom: 26px;
+  padding-bottom: 8px;
+}
+
+.input-icon {
+  color: white;
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.input-box input {
+  width: 100%;
+  background: rgba(8, 35, 70, 0.95);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  border-radius:5px;
+}
+
+.input-box input::placeholder {
+  color: rgba(220, 230, 240, 0.75);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: rgba(220, 230, 240, 0.55);
+  margin-top: -8px;
+  margin-bottom: 28px;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-options input {
+  accent-color: #27c4b3;
+}
+
+.login-options a {
+  color: rgba(220, 230, 240, 0.55);
+  text-decoration: none;
+  font-style: italic;
+}
+
+.login-button {
+  width: 180px;
+  height: 45px;
+  background: linear-gradient(135deg, #1fa79e, #1ec5b3);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 197, 179, 0.35);
+}
